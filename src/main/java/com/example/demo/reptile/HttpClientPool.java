@@ -26,7 +26,7 @@ public class HttpClientPool {
 
     private static void doGet(PoolingHttpClientConnectionManager cm) {
         CloseableHttpClient httpClient = HttpClients.custom().setConnectionManager(cm).build();
-        HttpGet httpGet = new HttpGet("http://www.itcast.cn");
+        HttpGet httpGet = new HttpGet("http://www.baidu.cn");
         CloseableHttpResponse response = null;
         try {
             response = httpClient.execute(httpGet);
